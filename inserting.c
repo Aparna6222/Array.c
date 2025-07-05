@@ -6,14 +6,13 @@ int main()
     char data[100];
     int a[50], n, i, key, pos, cnt;
 
-    fp = fopen("array.txt", "r"); // accesing our (file_name).txt file here with "r"tha is read only
-
+    fp = fopen("number.txt", "r"); 
     printf("enter count of array :");
     scanf("%d", &n);
 
     for (i = 0; i < n; i++)
     {
-        fscanf(fp, "%d", &a[i]); // accessing the file  converting char data of file into int type
+        fscanf(fp, "%d", &a[i]); 
         printf("%d   ", a[i]);
     }
 

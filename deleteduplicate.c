@@ -1,5 +1,4 @@
-// accesssing array element from alredy creted txt file using FILE
-
+// delete duplicate value
 #include <stdio.h>
 #include <stdlib.h>
 int main()
@@ -8,17 +7,18 @@ int main()
     char data[100];
     int a[50], n, i, j, key, cnt;
 
-    fp = fopen("number.txt", "r"); 
+    fp = fopen("number.txt", "r");
+
     printf("enter count of array :");
     scanf("%d", &n);
 
     for (i = 0; i < n; i++)
     {
-        fscanf(fp, "%d", &a[i]); 
-        printf("%d   ", a[i]);
+        fscanf(fp, " %d ", &a[i]);
+        printf(" %d ", a[i]);
     }
 
-    printf("\n Enter element key to delete  :");
+    printf("\n Enter element key to delete :");
     scanf("%d", &key);
 
     for (i = 0; i < n; i++)
@@ -29,14 +29,14 @@ int main()
                 a[j] = a[j + 1];
 
             n--;
-            break;     
+            i--;
         }
     }
-    
-    printf("array after deletion:\n ");
+
+    printf("array after deletion:\n");
     for (i = 0; i < n; i++)
     {
-        printf("%d  ", a[i]);
+        printf(" %d ", a[i]);
     }
     return 0;
 }

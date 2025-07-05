@@ -15,7 +15,7 @@ int main()
 
     for (i = 0; i < n; i++)
     {
-        if (a[i] == key) // searchig operation
+        if (a[i] == key) 
             cnt++;
     }
 

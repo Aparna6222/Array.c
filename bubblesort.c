@@ -12,7 +12,7 @@ int main()
     {
         for (j = 0; j < n - 1 - i; j++)
         {
-            if (a[j] > a[j + 1])         // decending (a[j] < a[j + 1])
+            if (a[j] > a[j + 1])         
             {
                 temp = a[j];
                 a[j] = a[j + 1];

@@ -2,7 +2,7 @@
 int main()
 {
     int n, i, a[100];
-    printf("how many element you eant to Enter :");
+    printf("how many element you want to Enter :");
     scanf("%d", &n);
     printf("enter %d data in it :", n);
 
